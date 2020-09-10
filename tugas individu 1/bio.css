@@ -1,0 +1,134 @@
+.mainSect {
+  background-color: lightblue;
+}
+
+.profile-picture {
+  border-radius: 0px 0px 30px 30px;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 55px;
+  color: #07689f;
+}
+
+.sns {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #07689f;
+}
+
+.col-biodata {
+  margin-top: -30px;
+  border-radius: 20px 20px 20px 20px;
+  background: #faf2de;
+  background: linear-gradient(93deg, rgba(250, 242, 222, 0.510242) 100%, black 100%);
+}
+
+.biodata {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #07689f;
+}
+
+.logo-sns {
+  max-width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.logo-sns:hover {
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  margin: 9px;
+  overflow: hidden;
+  background-color: #000000d2;
+}
+
+.footer {
+  background-color: #ffc93c;
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+    margin-top: -30px;
+    font-size: 40px;
+  }
+  .biodata {
+    font-size: 20px;
+  }
+  .sns {
+    font-size: 25px !important;
+  }
+  .col-biodata {
+    margin-top: 0px;
+  }
+  .logo-sns {
+    max-width: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .name {
+    margin-top: -30px;
+    font-size: 40px;
+  }
+  .biodata {
+    font-size: 20px;
+  }
+  .sns {
+    font-size: 25px;
+  }
+  .col-biodata {
+    margin-top: 0px;
+  }
+  .logo-sns {
+    max-width: 30px;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .name {
+    margin-top: -30px;
+    font-size: 48px !important;
+  }
+  .biodata {
+    font-size: 20px;
+  }
+  .sns {
+    font-size: 25px;
+  }
+  .col-biodata {
+    margin-top: 10px;
+  }
+  .logo-sns {
+    max-width: 50px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .name {
+    margin-top: -30px;
+    font-size: 55px;
+  }
+  .biodata {
+    font-size: 36px;
+  }
+  .sns {
+    font-size: 29px;
+  }
+  .logo-sns {
+    max-width: 80px;
+  }
+}
+/*# sourceMappingURL=bio.css.map */
