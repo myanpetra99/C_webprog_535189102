@@ -48,6 +48,7 @@ html {
 }
 
 .flip-name-back {
+  margin-top: -55px;
   background-color: #07689f;
   color: #ffde00;
   -webkit-transform: rotateY(180deg);
@@ -114,7 +115,7 @@ html {
     margin-top: 0px;
   }
   .logo-sns {
-    max-width: 50px !important;
+    max-width: 30px !important;
   }
 }
 
@@ -139,7 +140,7 @@ html {
     margin-top: 0px;
   }
   .logo-sns {
-    max-width: 60px !important;
+    max-width: 50px !important;
   }
 }
 
@@ -149,7 +150,7 @@ html {
     font-size: 40px;
   }
   .biodata {
-    font-size: 20px;
+    font-size: 27px !important;
   }
   .sns {
     font-size: 25px;
@@ -187,7 +188,7 @@ html {
     font-size: 55px;
   }
   .biodata {
-    font-size: 36px;
+    font-size: 31px;
   }
   .sns {
     font-size: 29px;
