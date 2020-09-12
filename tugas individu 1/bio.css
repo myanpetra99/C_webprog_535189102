@@ -1,16 +1,57 @@
-.mainSect {
+html {
   background-color: lightblue;
+}
+
+.mainSect {
+  background: #ffde00;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffde00), to(#ffc000));
+  background: linear-gradient(180deg, #ffde00 0%, #ffc000 100%);
 }
 
 .profile-picture {
   border-radius: 0px 0px 30px 30px;
 }
 
-.name {
+.flip-name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 55px;
   color: #07689f;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.flip-name-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.flip-name:hover .flip-name-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-name-front,
+.flip-name-back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-name-back {
+  background-color: #07689f;
+  color: #ffde00;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .sns {
@@ -23,14 +64,13 @@
 .col-biodata {
   margin-top: -30px;
   border-radius: 20px 20px 20px 20px;
-  background: #faf2de;
-  background: linear-gradient(93deg, rgba(250, 242, 222, 0.510242) 100%, black 100%);
+  background-color: #FEDF84;
 }
 
 .biodata {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 30px;
   color: #07689f;
 }
 
@@ -56,11 +96,11 @@
 }
 
 .footer {
-  background-color: #ffc93c;
+  background-color: lightblue;
 }
 
 @media only screen and (max-width: 600px) {
-  .name {
+  .flip-name {
     margin-top: -30px;
     font-size: 40px;
   }
@@ -85,7 +125,7 @@
   .footer {
     height: auto;
   }
-  .name {
+  .flip-name {
     margin-top: -30px;
     font-size: 40px;
   }
@@ -104,7 +144,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .name {
+  .flip-name {
     margin-top: -30px;
     font-size: 40px;
   }
@@ -123,7 +163,7 @@
 }
 
 @media only screen and (max-width: 1360px) {
-  .name {
+  .flip-name {
     margin-top: -30px;
     font-size: 48px !important;
   }
@@ -142,7 +182,7 @@
 }
 
 @media only screen and (max-width: 1600px) {
-  .name {
+  .flip-name {
     margin-top: -30px;
     font-size: 55px;
   }

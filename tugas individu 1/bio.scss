@@ -1,205 +1,247 @@
-.mainSect{
+html{
     background-color: lightblue;
 }
 
-.profile-picture{
+.mainSect {
+    
+    background: rgb(255, 222, 0);
+    background: linear-gradient(180deg, rgba(255, 222, 0, 1) 0%, rgba(255, 192, 0, 1) 100%);
+
+}
+
+.profile-picture {
     border-radius: 0px 0px 30px 30px;
 
 }
 
-.name{
+.flip-name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 55px;
     color: #07689f;
+    perspective: 1000px;
 
 
 }
 
-.sns{
+.flip-name-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-name:hover .flip-name-inner {
+    transform: rotateY(180deg);
+
+}
+
+
+.flip-name-front,
+.flip-name-back {
+ 
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+.flip-name-back {
+
+    background-color: #07689f;
+    color: rgb(255, 222, 0);
+    transform: rotateY(180deg);
+}
+
+
+
+
+.sns {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 40px;
     color: #07689f;
 }
 
-.col-biodata{
+.col-biodata {
     margin-top: -30px;
     border-radius: 20px 20px 20px 20px;
-    background: rgb(250,242,222);
-    background: linear-gradient(93deg, rgba(250,242,222,0.5102415966386555) 100%, rgba(0,0,0,1) 100%);
-}
-.biodata{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: #07689f;
+    background-color: #FEDF84;
 }
 
-.logo-sns{
+.biodata {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #07689f;
+
+  
+}
+
+.logo-sns {
     max-width: 100px;
     object-fit: contain;
-    &:hover{
+
+    &:hover {
         transition-duration: 100ms;
         filter: invert(100%);
     }
 }
+
 .divider {
     height: 1px;
-    width:100%; 
-    margin: 9px ;
+    width: 100%;
+    margin: 9px;
     overflow: hidden;
     background-color: #000000d2;
-  }
+}
 
-  .footer{
-      background-color: #ffc93c;
-  }
+.footer {
+   background-color: lightblue;
+}
 
-  @media only screen and (max-width: 600px) {
-   
+@media only screen and (max-width: 600px) {
 
-    .name{
+
+    .flip-name {
         margin-top: -30px;
         font-size: 40px;
     }
 
-    .biodata{
+    .biodata {
         font-size: 20px !important;
     }
 
-    .sns{
+    .sns {
         font-size: 15px !important;
     }
 
-    .col-biodata{
+    .col-biodata {
         margin-top: 0px;
     }
 
-    .logo-sns{
+    .logo-sns {
         max-width: 50px !important;
     }
 
-    
-  }
+  
 
-  @media only screen and (max-width: 900px) {
-    .mainSect{
-      height: 100vh;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .mainSect {
+        height: 100vh;
     }
 
-    .footer{
+    .footer {
         height: auto;
     }
 
-    .name{
+    .flip-name {
         margin-top: -30px;
         font-size: 40px;
     }
 
-    .biodata{
+    .biodata {
         font-size: 25px !important;
     }
 
-    .sns{
+    .sns {
         font-size: 25px !important;
     }
 
-    .col-biodata{
+    .col-biodata {
         margin-top: 0px;
     }
 
-    .logo-sns{
+    .logo-sns {
         max-width: 60px !important;
     }
 
-    
-  }
 
-  @media only screen and (max-width: 1024px) {
-    .mainSect {
+}
 
-    }
+@media only screen and (max-width: 1024px) {
+    .mainSect {}
 
-    .name{
+    .flip-name {
         margin-top: -30px;
         font-size: 40px;
     }
 
-    .biodata{
+    .biodata {
         font-size: 20px;
     }
 
-    .sns{
+    .sns {
         font-size: 25px;
     }
 
-    .col-biodata{
+    .col-biodata {
         margin-top: 0px;
     }
 
-    .logo-sns{
+    .logo-sns {
         max-width: 30px;
     }
 
-    
-  }
+
+}
 
 
-  @media only screen and (max-width: 1360px) {
-    .mainSect {
-        
-    }
+@media only screen and (max-width: 1360px) {
+    .mainSect {}
 
-    .name{
+    .flip-name {
         margin-top: -30px;
         font-size: 48px !important;
     }
 
-    .biodata{
+    .biodata {
         font-size: 20px;
     }
 
-    .sns{
+    .sns {
         font-size: 25px;
     }
 
-    .col-biodata{
+    .col-biodata {
         margin-top: 10px;
     }
 
-    .logo-sns{
+    .logo-sns {
         max-width: 50px;
     }
 
-    
-  }
 
-  @media only screen and (max-width: 1600px) {
-    .mainSect {
+}
 
-    }
+@media only screen and (max-width: 1600px) {
+    .mainSect {}
 
-    .name{
+    .flip-name {
         margin-top: -30px;
         font-size: 55px;
     }
 
-    .biodata{
+    .biodata {
         font-size: 36px;
     }
 
-    .sns{
+    .sns {
         font-size: 29px;
     }
 
 
 
-    .logo-sns{
+    .logo-sns {
         max-width: 80px;
     }
 
-    
-  }
 
-
+}
