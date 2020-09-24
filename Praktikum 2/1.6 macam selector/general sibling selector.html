@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ~ p {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        ini tidak kena karena lebih dahulu dipanggil sebelum div
+    </p>
+    <div><p>
+        ini bukan saudara div
+    </p></div>
+    <p>ini juga kena, karena merupakan saudara div</p>
+    <h2>ini tidak, karena beda element</h2>
+    <p>ini juga kena, karena merupakan saudara div</p>
+</body>
+</html>
