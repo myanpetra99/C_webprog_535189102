@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Object</title>
+
+    <script>
+
+        var Person = {
+            Email: "",
+            NIM: "",
+            Nama: ""
+        }
+
+        function CreateObject(pEmail, pNIM, pNama) {
+            Person.Email = pEmail;
+            Person.NIM = pNIM;
+            Person.Nama = pNama;
+        }
+
+        function LoadObject() {
+            document.getElementById("iPerson").value =
+                "Email: " + Person.Email + " " +
+                "NIM: " + Person.NIM + " " +
+                "Nama: " + Person.Nama;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="iEmail" placeholder="Masukkan Email" />
+    <input type="text" id="iNIM" placeholder="Masukkan NIM" />
+    <input type="text" id="iName" placeholder="Masukkan Nama" />
+
+    <button type="button"
+        onclick='CreateObject(document.getElementById("iEmail").value, document.getElementById("iNIM").value, document.getElementById("iName").value)'>Create</button>
+
+    <br><br>
+
+    <button type="button" onclick='LoadObject()'>Load</button>
+
+    <input type="text" id="iPerson" style="width: 550px;" readonly />
+
+</body>
+
+</html>

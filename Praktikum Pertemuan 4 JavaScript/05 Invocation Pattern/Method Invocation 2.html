@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Invocation Pattern</title>
+
+    <script>
+
+        var Person = {
+
+            Email: "",
+            NIM: "",
+            Nama: "",
+            Hobbies: [],
+
+            AddBio: function (pEmail, pNIM, pNama) { // Method
+                this.Email = pEmail;
+                this.NIM = pNIM;
+                this.Nama = pNama;
+            },
+
+            AddHobby: function (pHobby) { // Method
+                this.Hobbies.push(pHobby);
+            },
+
+            Write: function () { // Method
+                var str = "Bio: " + this.Email + ", " + this.NIM + ", " + this.Nama;
+                var hobb = "Hobbies: ";
+                var item;
+                for (item of this.Hobbies) {
+                    hobb += item + " ";
+                }
+                return str + " " + hobb;
+            }
+
+        }
+
+        function AddBioInfo(pEmail, pNIM, pNama) {
+            Person.AddBio(pEmail, pNIM, pNama);
+        }
+
+        function AddHobby(pHobby) {
+            Person.AddHobby(pHobby);
+        }
+
+        function LoadObject() {
+            document.getElementById("oResult").innerHTML = Person.Write();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="iEmail" placeholder="Masukkan Email" />
+    <input type="text" id="iNIM" placeholder="Masukkan NIM" />
+    <input type="text" id="iName" placeholder="Masukkan Nama" />
+
+    <button type="button"
+        onclick='AddBioInfo(document.getElementById("iEmail").value, document.getElementById("iNIM").value, document.getElementById("iName").value)'>Add
+        Bio Info</button>
+
+    <br><br>
+
+    <input type="text" id="iHobby" placeholder="Add your hobby" style="width: 500px;">
+    <button type="button" onclick='Person.AddHobby(document.getElementById("iHobby").value)'>Add</button> <!--Person.AddHobby() adalah Method Invocation-->
+
+    <br><br>
+
+    <button type="button" onclick='LoadObject()'>Load</button>
+
+    <br><br>
+
+    <div id="oResult"></div>
+
+</body>
+
+</html>

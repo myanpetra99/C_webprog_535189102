@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Introduction</title>
+
+    <style>
+        .MakeRed {
+            color: rgb(255, 0, 0);
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function WriteLog(LogText) {
+            document.getElementById("Line1").innerHTML = "Hello World";
+            console.log(LogText);
+        }
+    </script>
+
+</head>
+
+<body>
+    <button type="button" onclick='WriteLog("Log this")'>Go</button>
+    <p id="Line1">Change this</p>
+
+</body>
+
+</html>

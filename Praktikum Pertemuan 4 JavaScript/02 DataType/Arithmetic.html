@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script DataType</title>
+
+    <script>
+        function Add(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) + Number(inp2);
+        }
+        function Sub(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) - Number(inp2);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="number" id="iNumAdd1" /> +
+    <input type="number" id="iNumAdd2" />
+    <button type="button"
+        onclick='Add("oResAdd", document.getElementById("iNumAdd1").value , document.getElementById("iNumAdd2").value)'>=</button>
+    <input type="number" id="oResAdd" />
+
+    <br><br>
+
+    <input type="number" id="iNumSub1" /> -
+    <input type="number" id="iNumSub2" />
+    <button type="button"
+        onclick='Sub("oResSub", document.getElementById("iNumSub1").value , document.getElementById("iNumSub2").value)'>=</button>
+    <input type="number" id="oResSub" />
+
+    <!-- Tugas: Buat perkalian, pembagian, modulo, pangkat -->
+
+</body>
+
+</html>

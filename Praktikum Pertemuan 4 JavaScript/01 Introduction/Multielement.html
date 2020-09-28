@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Introduction</title>
+
+    <style>
+        .makeGreen {
+            color: rgb(115, 255, 110);
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function ChangeAll(str){
+            document.getElementById("cLine1").innerHTML = str;
+            document.getElementById("cLine2").innerHTML = str;
+            document.getElementById("cLine1").className="makeGreen";
+            document.getElementById("cLine2").className="makeGreen";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <p id="cLine1">This text will change to....</p>
+
+    <br>
+
+    <p id="cLine2">This text will change to....</p>
+
+    <br>
+
+    <button type="button" onclick='ChangeAll("Tadaa")'>Change All</button>
+
+</body>
+
+</html>

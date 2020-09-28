@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Introduction</title>
+
+    <style>
+        .MakeRed {
+            color: white;
+            background-color: black;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button type="button" onclick='document.getElementById("cLine1").className="MakeRed"'>Go</button>
+    <p id="cLine1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+
+    <br />
+
+    <button type="button" onclick='document.getElementById("cLine2").className="Hide"'>Hide This</button>
+    <button type="button" onclick='document.getElementById("cLine2").className="Show"'>Show This</button>
+    <p id="cLine2">Maecenas eu velit accumsan, ullamcorper arcu sit amet, consectetur mi. Suspendisse a pulvinar augue,
+        vel sollicitudin nulla.</p>
+
+</body>
+
+</html>

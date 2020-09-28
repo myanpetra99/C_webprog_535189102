@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Object</title>
+
+    <script>
+
+        var Saya;
+
+        function Person(iEmail, iNim, iNama ,iUmur) {
+            this.Email = iEmail;
+            this.NIM = iNim;
+            this.Nama = iNama;
+            this.Umur = iUmur;
+            this.ValidasiData = function () {
+                if ((this.Email != "") && (this.NIM != "") && (this.Nama != "") && (this.Umur != "")) {
+                    return "OK";
+                } else {
+                    return "Error";
+                }
+            }
+        }
+
+        function CreateObject(iEmail, iNim, iNama , iUmur) {
+            Saya = new Person(iEmail, iNim, iNama, iUmur);
+        }
+
+        function LoadObject() {
+            document.getElementById("iPerson").value =
+                "Email: " + Saya.Email + " " +
+                "NIM: " + Saya.NIM + " " +
+                "Nama: " + Saya.Nama + " " +
+                "Umur: "+ Saya.Umur + " " +
+                "Validasi: " + Saya.ValidasiData();
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="iEmail" placeholder="Masukkan Email" />
+    <br>
+    <input type="text" id="iNIM" placeholder="Masukkan NIM" />
+    <br>
+    <input type="text" id="iName" placeholder="Masukkan Nama" />
+    <br>
+    <input type="text" id="iUmur" placeholder="Masukkan Umur" />
+    <br>
+
+    <button type="button"
+        onclick='CreateObject(document.getElementById("iEmail").value, document.getElementById("iNIM").value, document.getElementById("iName").value, document.getElementById("iUmur").value)'>Create</button>
+
+    <br><br>
+
+    <button type="button" onclick='LoadObject()'>Load</button>
+
+    <input type="text" id="iPerson" style="width: 550px;" height="100px" readonly />
+
+</body>
+
+</html>

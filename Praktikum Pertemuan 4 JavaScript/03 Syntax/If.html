@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Syntax</title>
+
+    <script>
+
+        var hobbies = [];
+
+        function AddHobby(pHobby) {
+            if (hobbies.length == 5) {
+                alert("You have reach maximum possible hobbies!");
+            }
+            else if (hobbies.length < 5 && pHobby.length < 3) {
+                alert("Please type correct hobby!");
+            }
+            else {
+                hobbies.push(pHobby);
+                document.getElementById("iHobby").value = "";
+                document.getElementById("iHobby").focus();
+            }
+        }
+
+        function InLoop() {
+            var item;
+            for (item of hobbies) {
+                document.getElementById("oResult").innerHTML += item + "<br />";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="iHobby" placeholder="Add your hobby (max 5)" style="width: 500px;">
+    <button type="button" onclick='AddHobby(document.getElementById("iHobby").value)'>Add</button>
+    <button type="button" onclick='InLoop()'>Show All</button>
+
+    <br><br>
+
+    <p id="oResult"></p>
+
+</body>
+
+</html>
