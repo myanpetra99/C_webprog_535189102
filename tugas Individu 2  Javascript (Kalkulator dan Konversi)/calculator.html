@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+</head>
+
+<body>
+
+    Bil 1 <input type="number" id="input1" />
+    <br>
+    <br>
+    Bil 2 <input type="number" id="input2" />
+    <br>
+    <br>
+
+    Hasil <input type="text" id="res" />
+    <br>
+    <br>
+    <button type="button"
+        onclick='Add("res", document.getElementById("input1").value , document.getElementById("input2").value)'
+        style="height:50px;width:50px">+</button>
+    <button type="button"
+        onclick='Sub("res", document.getElementById("input1").value , document.getElementById("input2").value)'
+        style="height:50px;width:50px">-</button>
+    <button type="button"
+        onclick='Mul("res", document.getElementById("input1").value , document.getElementById("input2").value)'
+        style="height:50px;width:50px">X</button>
+    <button type="button"
+        onclick='Div("res", document.getElementById("input1").value , document.getElementById("input2").value)'
+        style="height:50px;width:50px">/</button>
+
+    <script>
+        function Add(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) + Number(inp2);
+        }
+
+        function Sub(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) - Number(inp2);
+        }
+
+        function Div(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) / Number(inp2);
+        }
+
+        function Mul(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) * Number(inp2);
+        }
+    </script>
+</body>
+
+</html>

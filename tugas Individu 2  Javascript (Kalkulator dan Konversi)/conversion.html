@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <input type="number" id="input" placeholder="Masukan angka">
+    <button type="button" onclick='Konversi(document.getElementById("input").value)'>Konversi</button>
+
+    <br><br>
+    <h5>Hasil konversi</h5>
+    <hr>
+    <p id="hasil"></p>
+    
+    <script>
+        function Konversi(input) {
+            if (input > 100 || input == "" || input < 0) {
+                alert("input salah, masukan angka 0-100!");
+            } else if (input <= 40) {
+                document.getElementById("hasil").innerHTML = "E";
+            } else if (input <= 55) {
+                document.getElementById("hasil").innerHTML = "D";
+            } else if (input <= 70) {
+                document.getElementById("hasil").innerHTML = "C";
+            } else if (input <= 80) {
+                document.getElementById("hasil").innerHTML = "B";
+            } else if (input <= 100) {
+                document.getElementById("hasil").innerHTML = "A";
+            }
+        }
+    </script>
+</body>
+
+</html>
