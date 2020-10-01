@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Node</title>
+</head>
+<body>
+
+    <p id="iniId">Klik tombol untuk mendapatkan Tipe node dari elemen ini.</p>
+
+    <button onclick="myFunction()">Cek Tipe Node!</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("iniId").nodeType;
+    document.getElementById("demo").innerHTML = 'tipe node adalah '+ x;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>JavaScript  Demo</h1>
+    <h2> heading Pertama</h2>
+    <h2> heading  Kedua</h2>
+    <h2>heading Ketiga</h2>
+
+    <button id="btnCount">Hitung h2</button>
+
+    <script>
+        let btn = document.getElementById('btnCount');
+        btn.addEventListener('click', () => {
+            let headings = document.getElementsByTagName('h2');
+            alert(`Berapa tag H2 pada HTML ini? = ${headings.length}`);
+        });
+    </script>
+</body>
+
+</html>
