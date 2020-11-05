@@ -1,0 +1,14 @@
+{
+  "name": "expresspraktikum",
+  "version": "1.0.0",
+  "description": "Praktikum 9 web programming (express)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IrvanLn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
