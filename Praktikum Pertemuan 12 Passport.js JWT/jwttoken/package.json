@@ -1,0 +1,24 @@
+{
+  "name": "jwttoken",
+  "version": "1.0.0",
+  "description": "JWT Contoh",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irvanbelajarit/praktikumweb_jwt.git"
+  },
+  "author": "Irvan L",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irvanbelajarit/praktikumweb_jwt/issues"
+  },
+  "homepage": "https://github.com/irvanbelajarit/praktikumweb_jwt#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.6"
+  }
+}
